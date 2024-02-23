@@ -10,7 +10,7 @@ export default function ThemeToggle() {
         type="checkbox"
         name="light-switch"
         id="light-switch"
-        className="light-switch sr-only"
+        className="light-switch sr-only"   
         checked={currentTheme === 'light'}
         onChange={() => changeCurrentTheme(currentTheme === 'light' ? 'dark' : 'light')}
       />
@@ -18,6 +18,9 @@ export default function ThemeToggle() {
         className="flex items-center justify-center cursor-pointer w-8 h-8 bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-600/80 rounded-full"
         htmlFor="light-switch"
       >
+
+
+        
         <svg className="w-4 h-4 dark:hidden" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
           <path
             className="fill-current text-slate-400"
